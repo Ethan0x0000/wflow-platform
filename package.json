@@ -1,0 +1,33 @@
+{
+  "name": "wflow-platform",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.34.5",
+  "description": "Generic declarative workflow platform on Temporal: engine, host service, visual designer and workbench.",
+  "scripts": {
+    "dev": "pnpm --filter server --filter web --parallel dev",
+    "dev:all": "pnpm --filter server --filter web --filter web-react --parallel dev",
+    "dev:server": "pnpm --filter server dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:react": "pnpm --filter web-react dev",
+    "build": "pnpm --filter server build && pnpm --filter web build",
+    "build:react": "pnpm --filter server build && pnpm --filter web-react build",
+    "test": "pnpm --filter server test && pnpm --filter web test && pnpm --filter web-react test",
+    "test:react": "pnpm --filter server test && pnpm --filter web-react test",
+    "test:all": "pnpm --filter server test && pnpm --filter web test",
+    "type-check": "pnpm --filter server type-check && pnpm --filter web-react type-check",
+    "type-check:react": "pnpm --filter web-react type-check",
+    "lint": "eslint apps/server/src apps/web-react/src"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "wflow-core": "github:Ethan0x0000/wflow-core#v0.1.0",
+    "@types/node": "^22.0.0",
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.12.0",
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "typescript-eslint": "^8.70.0"
+  }
+}

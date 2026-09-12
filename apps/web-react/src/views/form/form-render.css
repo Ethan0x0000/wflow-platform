@@ -1,0 +1,61 @@
+.w-form-render {
+  width: 100%;
+}
+
+.w-form-block {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.w-form-node {
+  width: 100%;
+}
+
+.w-form-node[data-type='SpanLayout'],
+.w-form-node[data-type='TableLayout'] {
+  margin-bottom: 0;
+}
+
+.w-form-node-label {
+  margin-bottom: 4px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.w-form-node-required {
+  margin-right: 4px;
+  color: #ff4d4f;
+  font-family: SimSun, sans-serif;
+}
+
+.w-form-node-body {
+  width: 100%;
+}
+
+.w-form-node-error {
+  margin-top: 2px;
+  color: #ff4d4f;
+  font-size: 12px;
+}
+
+.w-form-node-desc {
+  margin-top: 2px;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+}
+
+.w-form-empty {
+  padding: 24px 0;
+  color: rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+
+.w-form-render-design .w-form-node {
+  outline: 1px dashed transparent;
+  transition: outline-color 0.15s;
+}
+
+.w-form-render-design .w-form-node:hover {
+  outline-color: #1677ff;
+}

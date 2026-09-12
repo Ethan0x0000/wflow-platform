@@ -1,0 +1,135 @@
+.w-rich-text {
+  width: 100%;
+}
+
+.w-rich-text-toolbar {
+  padding: 2px 4px;
+}
+
+.w-rich-text-body {
+  position: relative;
+}
+
+.w-rich-text-editor {
+  min-height: 120px;
+  overflow-y: auto;
+}
+
+.w-rich-text-editor .ProseMirror {
+  min-height: 120px;
+  padding: 8px 11px;
+  outline: none;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.w-rich-text-editor .ProseMirror > *:first-child {
+  margin-top: 0;
+}
+
+.w-rich-text-editor .ProseMirror p {
+  margin: 0 0 8px;
+}
+
+.w-rich-text-editor .ProseMirror p:last-child {
+  margin-bottom: 0;
+}
+
+.w-rich-text-editor .ProseMirror h1,
+.w-rich-text-editor .ProseMirror h2,
+.w-rich-text-editor .ProseMirror h3,
+.w-rich-text-editor .ProseMirror h4,
+.w-rich-text-editor .ProseMirror h5 {
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 12px 0 8px;
+}
+
+.w-rich-text-editor .ProseMirror h1 {
+  font-size: 1.7em;
+}
+
+.w-rich-text-editor .ProseMirror h2 {
+  font-size: 1.45em;
+}
+
+.w-rich-text-editor .ProseMirror h3 {
+  font-size: 1.25em;
+}
+
+.w-rich-text-editor .ProseMirror h4 {
+  font-size: 1.1em;
+}
+
+.w-rich-text-editor .ProseMirror h5 {
+  font-size: 1em;
+}
+
+.w-rich-text-editor .ProseMirror ul {
+  list-style: disc;
+  margin: 0 0 8px;
+  padding-left: 22px;
+}
+
+.w-rich-text-editor .ProseMirror ol {
+  list-style: decimal;
+  margin: 0 0 8px;
+  padding-left: 22px;
+}
+
+.w-rich-text-editor .ProseMirror li p {
+  margin: 0;
+}
+
+.w-rich-text-editor .ProseMirror blockquote {
+  border-left: 3px solid rgba(128, 128, 128, 0.45);
+  margin: 0 0 8px;
+  padding: 2px 0 2px 10px;
+}
+
+.w-rich-text-editor .ProseMirror img {
+  max-width: 100%;
+  height: auto;
+}
+
+.w-rich-text-editor .ProseMirror a {
+  color: #1677ff;
+  text-decoration: underline;
+}
+
+.w-rich-text-editor .ProseMirror code {
+  background: rgba(128, 128, 128, 0.15);
+  border-radius: 3px;
+  padding: 0 4px;
+}
+
+.w-rich-text-editor .ProseMirror pre {
+  background: rgba(128, 128, 128, 0.15);
+  border-radius: 6px;
+  margin: 0 0 8px;
+  padding: 8px 10px;
+  overflow-x: auto;
+}
+
+.w-rich-text-editor .ProseMirror pre code {
+  background: none;
+  padding: 0;
+}
+
+.w-rich-text-editor .ProseMirror hr {
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.35);
+  margin: 12px 0;
+}
+
+.w-rich-text-editor .ProseMirror-focused {
+  outline: none;
+}
+
+.w-rich-text-placeholder {
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  font-size: 14px;
+  pointer-events: none;
+}

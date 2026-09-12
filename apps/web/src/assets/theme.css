@@ -1,0 +1,15 @@
+
+:root {
+    /*wflow全局主题样式变量定义*/
+    --w-node-width: 220px; /*流程图节点宽度*/
+    --w-node-line-len: 80px; /*流程图节点线长*/
+    --w-node-line-width: 2px;
+}
+
+:root {
+    /*element-plus主题色覆盖定义1*/
+    --el-color-primary: #1989fa !important;
+    --el-color-danger: #E04765 !important;
+    --el-color-success: #35b881 !important;
+    --el-color-warning: #f78f5f !important;
+}

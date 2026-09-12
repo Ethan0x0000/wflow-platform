@@ -1,0 +1,6 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+onlyBuiltDependencies:
+  - "wflow-core@https://codeload.github.com/Ethan0x0000/wflow-core/tar.gz/363af861c5f941dc294b0b10f7b3c6233f3b3af7"

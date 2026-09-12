@@ -1,0 +1,211 @@
+/* ---------- Default print ---------- */
+.w-print {
+  font-family: 宋体, SimSun, serif;
+  position: relative;
+  color: #000;
+  background: #fff;
+  padding: 16px;
+}
+
+.w-print h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.w-print-subtitle {
+  font-size: 14px;
+}
+
+.w-print-header {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.w-print-header > div {
+  padding: 5px 0;
+}
+
+.w-print .qr-code {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+}
+
+.w-print table {
+  font-size: 16px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.w-print table tr th,
+.w-print table tr td {
+  text-align: left;
+  border: 1px solid #464648;
+  padding: 5px 10px;
+}
+
+.w-print .w-print-split th {
+  background: #f5f5f5;
+}
+
+.w-print-record {
+  padding: 5px 0;
+}
+
+.w-print-record > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.w-print-footer {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.w-print-footer > div {
+  display: inline-block;
+  width: 50%;
+}
+
+.w-print-footer > div:last-child {
+  text-align: right;
+}
+
+.w-print-subtable {
+  font-size: 14px !important;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.w-print-subtable td {
+  border: 1px solid #464648;
+  padding: 3px 6px;
+}
+
+/* ---------- Custom print designer ---------- */
+.w-print-designer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #f0f2f5;
+}
+
+.w-print-designer-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 8px;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.w-print-designer-toolbar .w-tool-sep {
+  margin: 0 4px;
+}
+
+.w-print-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #333;
+  font-size: 16px;
+}
+
+.w-print-icon-btn:hover {
+  background: #f0f0f0;
+}
+
+.w-print-icon-btn.active {
+  color: #1677ff;
+  background: #e6f4ff;
+}
+
+.w-print-designer-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.w-print-vars {
+  width: 200px;
+  padding: 8px;
+  overflow: auto;
+  background: #fafafa;
+  border-right: 1px solid #e8e8e8;
+}
+
+.w-print-vars-group-title {
+  font-size: 12px;
+  color: #999;
+  margin: 6px 0;
+}
+
+.w-print-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.w-print-fields > div {
+  padding: 5px 10px;
+  cursor: grab;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  font-size: 13px;
+  user-select: none;
+}
+
+.w-print-fields > div:hover {
+  background: #e6f4ff;
+  color: #1677ff;
+  border-color: #1677ff;
+}
+
+.w-print-pages {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  padding: 12px;
+}
+
+.w-print-pages .ce-page-container {
+  box-shadow: 0 0 10px 0 #cbc9c9;
+}
+
+.w-print-designer-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  padding: 0 12px;
+  background: #fff;
+  border-top: 1px solid #e8e8e8;
+  font-size: 12px;
+  color: #666;
+}
+
+.w-print-table-grid td {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #bfbfbf;
+  cursor: pointer;
+}
+
+.w-print-table-grid td.on {
+  background: #e6f4ff;
+  border-color: #1677ff;
+}

@@ -1,0 +1,179 @@
+/****覆盖element默认样式******/
+.w-drawer .el-drawer__header {
+    padding: 10px 15px !important;
+    margin-bottom: 0 !important;
+}
+
+.w-drawer .el-drawer__body {
+    padding: 0 15px 10px 15px;
+}
+
+.w-proper {
+    width: auto !important;
+    min-width: 200px !important;
+}
+
+.w-number-input .el-input__inner {
+    text-align: left !important;
+}
+/******************************/
+
+/*去除表单项的label名称*/
+.w-form-cp-nlb > .el-form-item__label {
+    display: none !important;
+}
+
+/*表单组件选中的样式*/
+.w-form-cp-active {
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid var(--el-color-primary) !important;
+}
+
+.w-form-cp-active .w-form-component:first-of-type{
+    display: flex !important;
+}
+
+.el-form-item {
+    margin-bottom: 18px !important;
+}
+
+.w-form-render .el-form-item__content > * {
+    width: 100%;
+}
+
+.w-placeholder {
+    margin-left: 10px !important;
+    color: var(--el-text-color-placeholder) !important;
+}
+
+.w-form-d-item {
+    position: relative;
+    margin: 2px;
+    /*padding: 5px;*/
+    border-radius: 5px;
+    border: 1px dashed var(--el-bg-color);
+}
+
+.w-form-d-item:hover {
+    border: 1px dashed var(--el-border-color-darker);
+}
+
+/*给设计模式的组件添加遮罩层，防止触发组件的逻辑*/
+.w-form-d-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+}
+
+.w-form-item-ep::after {
+    display: none !important;
+}
+
+.w-form-cp-ct::after {
+    display: none !important;
+}
+
+* :focus {
+    outline: none;
+}
+
+.w-process-icon {
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.w-row-text{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*垂直居中*/
+.w-flex-col-ct {
+    display: flex !important;
+    align-items: center;
+}
+
+.w-card {
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--el-bg-color);
+}
+
+.w-card-sm {
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--el-bg-color);
+}
+
+.w-node-err{
+    border: 1px solid var(--el-color-danger);
+    box-shadow: 0 0 5px 0 var(--el-color-danger) !important;
+}
+
+.w-layout-y {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+/*复写右键菜单全局样式，美化下*/
+.v-contextmenu {
+    overflow: hidden;
+    border: 1px solid var(--el-border-color-light) !important;
+}
+
+.v-contextmenu-item {
+    color: var(--el-text-color-primary) !important;
+    padding: 8px 10px !important;
+}
+
+.v-contextmenu-inner {
+    border: none !important;
+    background-color: var(--el-bg-color-overlay);
+}
+
+.v-contextmenu-item--hover {
+    background-color: var(--el-fill-color-dark) !important;
+}
+
+/*修改默认滚动条样式，与el保持一致*/
+.w-scroll {
+    position: relative;
+}
+
+.w-scroll::-webkit-scrollbar {
+    position: absolute;
+    width: 6px;
+}
+
+.w-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    background-color: var(--el-color-info-light-5);
+}
+
+.w-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: var(--el-color-info-light-3);
+}
+
+/* 过渡效果 */
+.slide-right-enter-active, .slide-right-leave-active,
+.slide-left-enter-active, .slide-left-leave-active {
+    transition: transform 0.5s ease;
+}
+
+.slide-right-enter-from, .slide-left-leave-to {
+    transform: translateX(100%);
+}
+
+.slide-right-leave-to, .slide-left-enter-from {
+    transform: translateX(-100%);
+}

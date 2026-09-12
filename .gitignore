@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+*.sqlite
+.data/
+
+# Logs
+*.log
+logs/
+
+# Testing & Playwright
+coverage/
+playwright-report/
+test-results/
+.playwright/
+
+# Local-only upstream/reference sources (not part of the product)
+reference/
+
+# Cache & OS
+.DS_Store
+Thumbs.db
+.cache/
+.turbo/
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

@@ -1,0 +1,74 @@
+.w-user-switcher {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.w-user-switcher-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 24px;
+}
+
+.w-user-switcher-hint {
+  font-size: 12px;
+}
+
+.w-user-switcher-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 420px;
+  min-height: 140px;
+  overflow-y: auto;
+}
+
+.w-user-switcher-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.w-user-switcher-row:hover {
+  background: var(--wush-hover, rgba(0, 0, 0, 0.04));
+}
+
+.w-user-switcher-row.is-static {
+  cursor: default;
+}
+
+.w-user-switcher-row.is-static:hover {
+  background: transparent;
+}
+
+.w-user-switcher-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  color: #1677ff;
+  flex-shrink: 0;
+}
+
+.w-user-switcher-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+}
+
+.w-user-switcher-mask {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--wush-mask, rgba(255, 255, 255, 0.6));
+}

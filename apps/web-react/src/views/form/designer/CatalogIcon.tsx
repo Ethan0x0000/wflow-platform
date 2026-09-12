@@ -1,0 +1,73 @@
+import React from 'react';
+import {
+  AlignLeftOutlined,
+  AlertOutlined,
+  ApartmentOutlined,
+  AppstoreOutlined,
+  CalendarOutlined,
+  CheckCircleOutlined,
+  CheckSquareOutlined,
+  ClockCircleOutlined,
+  CodeOutlined,
+  ColumnWidthOutlined,
+  EditOutlined,
+  EnvironmentOutlined,
+  FieldNumberOutlined,
+  FieldTimeOutlined,
+  FolderOpenOutlined,
+  FontSizeOutlined,
+  FormOutlined,
+  FunctionOutlined,
+  GlobalOutlined,
+  HighlightOutlined,
+  IdcardOutlined,
+  PartitionOutlined,
+  PictureOutlined,
+  PhoneOutlined,
+  StarOutlined,
+  TableOutlined,
+  TagOutlined,
+} from '@ant-design/icons';
+
+const ICONS: Record<string, React.ComponentType> = {
+  SpanLayout: ColumnWidthOutlined,
+  TableLayout: TableOutlined,
+  TextInput: EditOutlined,
+  TextareaInput: AlignLeftOutlined,
+  NumberInput: FieldNumberOutlined,
+  Score: StarOutlined,
+  SinglePicker: CheckCircleOutlined,
+  MultiplePicker: CheckSquareOutlined,
+  DateTimePicker: CalendarOutlined,
+  DateTimeRangePicker: FieldTimeOutlined,
+  TimePicker: ClockCircleOutlined,
+  TimeRangePicker: FieldTimeOutlined,
+  UserPicker: ApartmentOutlined,
+  DeptPicker: ApartmentOutlined,
+  ImageUpload: PictureOutlined,
+  FileUpload: FolderOpenOutlined,
+  PhoneNumber: PhoneOutlined,
+  IdCard: IdcardOutlined,
+  Html: CodeOutlined,
+  LabelText: TagOutlined,
+  AlertBlock: AlertOutlined,
+  Text: FontSizeOutlined,
+  TableList: TableOutlined,
+  FormList: FormOutlined,
+  RichText: EditOutlined,
+  InstQuote: PartitionOutlined,
+  CalcFormula: FunctionOutlined,
+  Signature: HighlightOutlined,
+  Location: EnvironmentOutlined,
+  Provinces: EnvironmentOutlined,
+  WebIframe: GlobalOutlined,
+  VueSfc: CodeOutlined,
+  Leave: CalendarOutlined,
+};
+
+export const CatalogIcon: React.FC<{ type: string }> = ({ type }) => {
+  const Icon = ICONS[type] || AppstoreOutlined;
+  return <Icon />;
+};
+
+export default CatalogIcon;
